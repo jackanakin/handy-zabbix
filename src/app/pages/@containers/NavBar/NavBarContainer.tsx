@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 import {
     MenuWrapper, NavbarWrapper,
@@ -18,8 +19,8 @@ function NavBarContainer() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse color='blue' id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home"><MenuText>Home</MenuText></Nav.Link>
-                        <Nav.Link href="#home"><MenuText>Docs</MenuText></Nav.Link>
+                        <Nav.Link href="/"><MenuText>Home</MenuText></Nav.Link>
+                        <Nav.Link href="/docs"><MenuText>Docs</MenuText></Nav.Link>
                         <Nav.Link href="#home"><MenuText>Privacy Policy</MenuText></Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
