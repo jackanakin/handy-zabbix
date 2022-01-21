@@ -26,13 +26,6 @@ function FooterContainer() {
                         <Heading>DOWNLOAD</Heading>
                         <FooterLink href="https://play.google.com/store/apps/details?id=br.dev.kuhn.handyzabbix">Google Play</FooterLink>
                     </Column>
-                    <Column>
-                        <Heading>SUPPORT</Heading>
-                        <a href="https://www.buymeacoffee.com/jardelkuhn" target="_blank" rel="noreferrer">
-                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                                alt="Buy Me A Coffee" style={{ height: 60 + 'px', width: 217 + 'px' }} />
-                        </a>
-                    </Column>
                 </Row>
             </Container>
             <CopyrightText>Copyright © 2022 Jardel Kuhn</CopyrightText>
