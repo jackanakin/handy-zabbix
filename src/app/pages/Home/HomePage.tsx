@@ -1,59 +1,25 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import { AccountTree, Key, Notifications, BarChart } from '@mui/icons-material';
+
 import {
-    MenuWrapper, NavbarWrapper,
-    ContentWrapper, MenuText, CarouselImage,
-    ItemWrapper, ItemText, IconImage,
+    ContentWrapper, CarouselImage,
+    ItemWrapper, ItemText,
     ItemTitleText,
     ItemTextContainerRight, ItemTextContainerLeft,
     Circle, CircleInner, CircleWrapper, CircleContent,
-    CopyrightText,
 } from './styles';
-import {
-    Box,
-    Container,
-    Row,
-    Column,
-    FooterLink,
-    Heading,
-} from "./FooterStyles";
-import {
-    AccountTree, Key,
-    Notifications, BarChart
-} from '@mui/icons-material';
 
 import a from "app/assets/imgs/home/1.png"
 import b from "app/assets/imgs/home/2.png"
-import icon from "app/assets/imgs/app/icon.png";
 import { darkTheme } from 'app/themes/themes/darkTheme';
+import NavBarContainer from '../@containers/NavBar/NavBarContainer';
+import FooterContainer from '../@containers/Footer/FooterContainer';
 
 function HomePage() {
     return (
         <>
-            <NavbarWrapper bg="dark" expand="lg" variant="dark" className="ml-auto">
-                <MenuWrapper>
-                    <Navbar.Brand>
-                        <IconImage src={icon} alt='Site icon' />
-                        <MenuText>Handy Zabbix</MenuText>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse color='blue' id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home"><MenuText>Home</MenuText></Nav.Link>
-                            <Nav.Link href="#home"><MenuText>Docs</MenuText></Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                    </Navbar.Collapse>
-                </MenuWrapper>
-            </NavbarWrapper>
-
+            <NavBarContainer />
             <Carousel>
                 <Carousel.Item>
                     <CarouselImage
@@ -135,41 +101,10 @@ function HomePage() {
                 </ItemWrapper>
             </ContentWrapper>
 
-            <Footer />
+            <FooterContainer />
         </>
     );
 }
-
-const Footer = () => {
-    return (
-        <Box>
-            <Container>
-                <Row>
-                    <Column>
-                        <Heading>FIND ME</Heading>
-                        <FooterLink href="https://github.com/jackanakin">GitHub</FooterLink>
-                        <FooterLink href="mailto:jkuhn2@universo.univates.br">Email</FooterLink>
-                    </Column>
-                    <Column>
-                        <Heading>DOCS</Heading>
-                    </Column>
-                    <Column>
-                        <Heading>DOWNLOAD</Heading>
-                        <FooterLink href="https://play.google.com/store/apps/details?id=br.dev.kuhn.handyzabbix">Google Play</FooterLink>
-                    </Column>
-                    <Column>
-                        <Heading>SUPPORT</Heading>
-                        <a href="https://www.buymeacoffee.com/jardelkuhn" target="_blank" rel="noreferrer">
-                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                                alt="Buy Me A Coffee" style={{ height: 60 + 'px', width: 217 + 'px' }} />
-                        </a>
-                    </Column>
-                </Row>
-            </Container>
-            <CopyrightText>Copyright © 2022 Jardel Kuhn</CopyrightText>
-        </Box>
-    );
-};
 
 function CustomCircle({ children }: any) {
     return (

@@ -1,15 +1,7 @@
-import { Container, Navbar, Image } from 'react-bootstrap';
 import Typography from '@mui/material/Typography';
 import styled from "styled-components";
 
 import { darkTheme } from 'app/themes/themes/darkTheme';
-
-export const CopyrightText = styled.p`
-    text-align: center;
-    color: ${darkTheme.text.primaryColor};
-    font-size: 0.7em;
-    margin-top: 21px;
-`;
 
 export const CircleContent = styled.div`
     display: table-cell;
@@ -61,10 +53,6 @@ export const ItemTextContainerRight = styled.div`
     }
 `;
 
-export const IconImage = styled(Image).attrs({
-    height: '20vh', width: '20vw', roundedCircle: true
-})``;
-
 export const ItemTitleText = styled(Typography).attrs({
     variant: "h6", style: { padding: 1 + 'vw' }
 })`
@@ -99,19 +87,4 @@ export const ContentWrapper = styled.div`
     align-items: center;
     margin-top: 1vh;
     padding: 25px;
-`;
-
-export const NavbarWrapper = styled(Navbar).attrs({
-    expand: "lg",
-})`
-    width: 100vw;
-`;
-
-export const MenuText = styled.text`
-    color: ${darkTheme.text.primaryColor};
-    margin-left: 0.5vw;
-`;
-
-export const MenuWrapper = styled(Container)`
-    width: 100vw;
 `;

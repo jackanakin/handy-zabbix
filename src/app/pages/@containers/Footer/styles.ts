@@ -1,4 +1,12 @@
 import styled from 'styled-components';
+import { darkTheme } from 'app/themes/themes/darkTheme';
+
+export const CopyrightText = styled.p`
+    text-align: center;
+    color: ${darkTheme.text.primaryColor};
+    font-size: 0.7em;
+    margin-top: 21px;
+`;
 
 export const Box = styled.div`
   padding: 25px 50px;
