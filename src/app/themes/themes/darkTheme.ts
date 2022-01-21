@@ -8,5 +8,11 @@ export const darkTheme =
         layout: {
             pageBackground: "black",
             menuBackground: "black",
+        },
+        pages: {
+            home: {
+                icon: "#f44336",
+                footerHelpTitle: "gray"
+            }
         }
     } as ITheme;

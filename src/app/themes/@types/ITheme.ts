@@ -5,5 +5,11 @@ export default interface ITheme {
     layout: {
         pageBackground: string;
         menuBackground: string;
+    },
+    pages: {
+        home: {
+            icon: string;
+            footerHelpTitle: string;
+        }
     }
 }

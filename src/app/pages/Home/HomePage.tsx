@@ -1,18 +1,32 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import {
-    MenuWrapper, NavbarWrapper, ItemImage,
+    MenuWrapper, NavbarWrapper,
     ContentWrapper, MenuText, CarouselImage,
     ItemWrapper, ItemText, IconImage,
-    ItemTitleText, CircleWithIcon,
+    ItemTitleText,
     ItemTextContainerRight, ItemTextContainerLeft,
+    Circle, CircleInner, CircleWrapper, CircleContent,
+    CopyrightText,
 } from './styles';
-import { AccountTree, Key, Notifications, BarChart } from '@mui/icons-material';
+import {
+    Box,
+    Container,
+    Row,
+    Column,
+    FooterLink,
+    Heading,
+} from "./FooterStyles";
+import {
+    AccountTree, Key,
+    Notifications, BarChart
+} from '@mui/icons-material';
 
 import a from "app/assets/imgs/home/1.png"
 import b from "app/assets/imgs/home/2.png"
 import icon from "app/assets/imgs/app/icon.png";
+import { darkTheme } from 'app/themes/themes/darkTheme';
 
 function HomePage() {
     return (
@@ -77,9 +91,9 @@ function HomePage() {
 
             <ContentWrapper>
                 <ItemWrapper>
-                    <CircleWithIcon>
+                    <CustomCircle>
                         <AccountTree sx={iconSx} />
-                    </CircleWithIcon>
+                    </CustomCircle>
                     <ItemTextContainerLeft>
                         <ItemTitleText>Multiple sites</ItemTitleText>
                         <ItemText>The app was developed and tested only on version 5.4, compatibility with older versions is not guaranteed</ItemText>
@@ -93,15 +107,15 @@ function HomePage() {
                             API tokens are supported while you can still use the old user and password method
                         </ItemText>
                     </ItemTextContainerRight>
-                    <CircleWithIcon>
+                    <CustomCircle>
                         <Key sx={iconSx} />
-                    </CircleWithIcon>
+                    </CustomCircle>
                 </ItemWrapper>
 
                 <ItemWrapper>
-                    <CircleWithIcon>
+                    <CustomCircle>
                         <Notifications sx={iconSx} />
-                    </CircleWithIcon>
+                    </CustomCircle>
                     <ItemTextContainerLeft>
                         <ItemTitleText>Notifications</ItemTitleText>
                         <ItemText>Choose the severity level and get notified when a new problem is generated</ItemText>
@@ -115,19 +129,66 @@ function HomePage() {
                             Minute by minute graphs
                         </ItemText>
                     </ItemTextContainerRight>
-                    <CircleWithIcon>
+                    <CustomCircle>
                         <BarChart sx={iconSx} />
-                    </CircleWithIcon>
+                    </CustomCircle>
                 </ItemWrapper>
             </ContentWrapper>
+
+            <Footer />
         </>
     );
 }
 
+const Footer = () => {
+    return (
+        <Box>
+            <Container>
+                <Row>
+                    <Column>
+                        <Heading>FIND ME</Heading>
+                        <FooterLink href="https://github.com/jackanakin">GitHub</FooterLink>
+                        <FooterLink href="mailto:jkuhn2@universo.univates.br">Email</FooterLink>
+                    </Column>
+                    <Column>
+                        <Heading>DOCS</Heading>
+                    </Column>
+                    <Column>
+                        <Heading>DOWNLOAD</Heading>
+                        <FooterLink href="https://play.google.com/store/apps/details?id=br.dev.kuhn.handyzabbix">Google Play</FooterLink>
+                    </Column>
+                    <Column>
+                        <Heading>SUPPORT</Heading>
+                        <a href="https://www.buymeacoffee.com/jardelkuhn" target="_blank" rel="noreferrer">
+                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                                alt="Buy Me A Coffee" style={{ height: 60 + 'px', width: 217 + 'px' }} />
+                        </a>
+                    </Column>
+                </Row>
+            </Container>
+            <CopyrightText>Copyright © 2022 Jardel Kuhn</CopyrightText>
+        </Box>
+    );
+};
+
+function CustomCircle({ children }: any) {
+    return (
+        <Circle>
+            <CircleInner>
+                <CircleWrapper>
+                    <CircleContent>
+                        {children}
+                    </CircleContent>
+                </CircleWrapper>
+            </CircleInner>
+        </Circle>
+    );
+}
+
 const iconSx = {
-    color: "#f44336",
-    width: 20 + 'vw',
-    height: 20 + 'vh',
+    color: darkTheme.pages.home.icon,
+    width: 9 + 'vw',
+    height: 9 + 'vh',
 };
 
 export default HomePage;
