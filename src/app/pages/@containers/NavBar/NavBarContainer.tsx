@@ -21,14 +21,7 @@ function NavBarContainer() {
                     <Nav className="me-auto">
                         <Nav.Link href="/"><MenuText>Home</MenuText></Nav.Link>
                         <Nav.Link href="/docs"><MenuText>Docs</MenuText></Nav.Link>
-                        <Nav.Link href="#home"><MenuText>Privacy Policy</MenuText></Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link href="/privacypolicy"><MenuText>Privacy Policy</MenuText></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </MenuWrapper>

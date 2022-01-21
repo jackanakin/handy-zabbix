@@ -4,6 +4,7 @@ export const darkTheme =
     {
         text: {
             primaryColor: "white",
+            porcelanColor: "#D1D1D1",
         },
         layout: {
             pageBackground: "black",
