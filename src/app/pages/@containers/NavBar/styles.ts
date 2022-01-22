@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { darkTheme } from 'app/themes/themes/darkTheme';
 
 export const IconImage = styled(Image).attrs({
-    height: '20vh', width: '20vw', roundedCircle: true
+    height: '45vh', width: '45vw', roundedCircle: true
 })``;
 
 export const NavbarWrapper = styled(Navbar).attrs({

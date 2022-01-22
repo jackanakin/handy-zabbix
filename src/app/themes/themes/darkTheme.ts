@@ -9,6 +9,9 @@ export const darkTheme =
         layout: {
             pageBackground: "black",
             menuBackground: "black",
+            footer: {
+                hover: "#f44336",
+            }
         },
         pages: {
             home: {

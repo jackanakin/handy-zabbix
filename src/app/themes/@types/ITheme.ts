@@ -6,6 +6,9 @@ export default interface ITheme {
     layout: {
         pageBackground: string;
         menuBackground: string;
+        footer: {
+            hover: string;
+        }
     },
     pages: {
         home: {

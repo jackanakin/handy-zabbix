@@ -55,7 +55,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
    
   &:hover {
-      color: green;
+      color: ${darkTheme.layout.footer.hover};
       transition: 200ms ease-in;
   }
 `;
