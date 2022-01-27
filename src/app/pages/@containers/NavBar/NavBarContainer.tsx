@@ -19,7 +19,7 @@ function NavBarContainer() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/"><MenuText>Home</MenuText></Nav.Link>
-                        <Nav.Link href="/docs"><MenuText>Docs</MenuText></Nav.Link>
+                        <Nav.Link href="/docs/fundamentals/gettingstarted"><MenuText>Docs</MenuText></Nav.Link>
                         <Nav.Link href="/privacypolicy"><MenuText>Privacy Policy</MenuText></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
