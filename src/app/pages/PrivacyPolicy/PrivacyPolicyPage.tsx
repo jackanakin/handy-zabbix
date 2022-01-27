@@ -39,9 +39,9 @@ function PrivacyPolicyPage() {
                 <Text>If you have any questions regarding privacy while using the Application, or have questions about my practices, please contact me via email at jkuhn2@universo.univates.br</Text>
 
                 <FAQTitle>Keywords meaning</FAQTitle>
-                <Text>Zabbix site/server means any system/computer/resource hosting an instance of the official <a href='https://www.zabbix.com'>Zabbix Monitoring System</a></Text>
-                <Text>Zabbix API refers to the official Zabbix API's as defined <a href='https://www.zabbix.com/documentation/current/en/manual/api'>here</a></Text>
-                <Text>The "Application" referenced in this policy privacy is Handy Zabbix which is only available in the official Google Play Store, found <a href='https://play.google.com/store/apps/details?id=br.dev.kuhn.handyzabbix'>here</a></Text>
+                <Text>1. Zabbix site/server means any system/computer/resource hosting an instance of the official <a href='https://www.zabbix.com'>Zabbix Monitoring System</a></Text>
+                <Text>2. Zabbix API refers to the official Zabbix API's as defined <a href='https://www.zabbix.com/documentation/current/en/manual/api'>here</a></Text>
+                <Text>3. The "Application" referenced in this policy privacy is Handy Zabbix which is only available in the official Google Play Store, found <a href='https://play.google.com/store/apps/details?id=br.dev.kuhn.handyzabbix'>here</a></Text>
             
             </Content>
             <FooterContainer />

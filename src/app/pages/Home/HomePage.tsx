@@ -1,17 +1,19 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { AccountTree, Key, Notifications, BarChart } from '@mui/icons-material';
 
 import {
     ContentWrapper, CarouselImage,
-    ItemWrapper, ItemText,
-    ItemTitleText,
+    ItemWrapper,
     ItemTextContainerRight, ItemTextContainerLeft,
-    Circle, CircleInner, CircleWrapper, CircleContent,
+    Icon, Text, ItemTitleText
 } from './styles';
 
 import a from "app/assets/imgs/home/1.png"
 import b from "app/assets/imgs/home/2.png"
+import tree from "app/assets/imgs/home/tree.png"
+import key from "app/assets/imgs/home/key.png"
+import bell from "app/assets/imgs/home/bell.png"
+import graph from "app/assets/imgs/home/graph.png"
 import { darkTheme } from 'app/themes/themes/darkTheme';
 import NavBarContainer from '../@containers/NavBar/NavBarContainer';
 import FooterContainer from '../@containers/Footer/FooterContainer';
@@ -57,47 +59,39 @@ function HomePage() {
 
             <ContentWrapper>
                 <ItemWrapper>
-                    <CustomCircle>
-                        <AccountTree sx={iconSx} />
-                    </CustomCircle>
+                    <Icon src={tree} roundedCircle />
                     <ItemTextContainerLeft>
                         <ItemTitleText>Multiple sites</ItemTitleText>
-                        <ItemText>The app was developed and tested only on version 5.4, compatibility with older versions is not guaranteed</ItemText>
+                        <Text>The app was developed and tested only on version 5.4, compatibility with older versions is not guaranteed</Text>
                     </ItemTextContainerLeft>
                 </ItemWrapper>
 
                 <ItemWrapper>
                     <ItemTextContainerRight>
                         <ItemTitleText>API tokns</ItemTitleText>
-                        <ItemText>
+                        <Text>
                             API tokens are supported while you can still use the old user and password method
-                        </ItemText>
+                        </Text>
                     </ItemTextContainerRight>
-                    <CustomCircle>
-                        <Key sx={iconSx} />
-                    </CustomCircle>
+                    <Icon src={key} roundedCircle />
                 </ItemWrapper>
 
                 <ItemWrapper>
-                    <CustomCircle>
-                        <Notifications sx={iconSx} />
-                    </CustomCircle>
+                    <Icon src={bell} roundedCircle />
                     <ItemTextContainerLeft>
                         <ItemTitleText>Notifications</ItemTitleText>
-                        <ItemText>Choose the severity level and get notified when a new problem is generated</ItemText>
+                        <Text>Choose the severity level and get notified when a new problem is generated</Text>
                     </ItemTextContainerLeft>
                 </ItemWrapper>
 
                 <ItemWrapper>
                     <ItemTextContainerRight>
                         <ItemTitleText>Graphs</ItemTitleText>
-                        <ItemText>
+                        <Text>
                             Minute by minute graphs
-                        </ItemText>
+                        </Text>
                     </ItemTextContainerRight>
-                    <CustomCircle>
-                        <BarChart sx={iconSx} />
-                    </CustomCircle>
+                    <Icon src={graph} roundedCircle />
                 </ItemWrapper>
             </ContentWrapper>
 
@@ -105,25 +99,5 @@ function HomePage() {
         </>
     );
 }
-
-function CustomCircle({ children }: any) {
-    return (
-        <Circle>
-            <CircleInner>
-                <CircleWrapper>
-                    <CircleContent>
-                        {children}
-                    </CircleContent>
-                </CircleWrapper>
-            </CircleInner>
-        </Circle>
-    );
-}
-
-const iconSx = {
-    color: darkTheme.pages.home.icon,
-    width: 9 + 'vw',
-    height: 9 + 'vh',
-};
 
 export default HomePage;
