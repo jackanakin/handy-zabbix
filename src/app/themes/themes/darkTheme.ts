@@ -5,6 +5,7 @@ export const darkTheme =
         text: {
             primaryColor: "white",
             porcelanColor: "#D1D1D1",
+            linkColor: "#f44336",
         },
         layout: {
             pageBackground: "black",

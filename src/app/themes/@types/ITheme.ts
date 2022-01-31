@@ -2,6 +2,7 @@ export default interface ITheme {
     text: {
         primaryColor: string;
         porcelanColor: string;
+        linkColor: string;
     },
     layout: {
         pageBackground: string;
