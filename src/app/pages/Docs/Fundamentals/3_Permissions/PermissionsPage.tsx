@@ -3,19 +3,12 @@ import { Table } from 'react-bootstrap';
 
 import FooterContainer from 'app/pages/@containers/Footer/FooterContainer';
 import DocsNavBarContainer from 'app/pages/@containers/DocsNavBar/DocsNavBar';
-
-import addSiteImg from "app/assets/imgs/docs/app_screens/add_site.jpeg";
-import dashboardImg from "app/assets/imgs/docs/app_screens/dashboard.jpeg";
-import hostsImg from "app/assets/imgs/docs/app_screens/hosts.jpeg";
-import problemsImg from "app/assets/imgs/docs/app_screens/problems.jpeg";
-import setNameImg from "app/assets/imgs/docs/app_screens/set_name.jpeg";
-import hostDetailedImg from "app/assets/imgs/docs/app_screens/host_detailed.jpeg";
-import problemHistoryImg from "app/assets/imgs/docs/app_screens/problem_history.jpeg";
-import graphsImg from "app/assets/imgs/docs/app_screens/graphs.jpeg";
-
 import { Content } from './styles';
-import { Title, SubTitle, Text, AssetImage } from '../../DocsStyles';
+import { Title, SubTitle, Text } from '../../DocsStyles';
 import TextLink from 'app/styled-components/TextLink';
+
+import enabledApiImg from "app/assets/imgs/docs/zabbix_permissions/enabled_api.png";
+import apiMethodsAllowListImg from "app/assets/imgs/docs/zabbix_permissions/api_methods_allow_list.png";
 
 function PermissionsPage() {
 
@@ -29,9 +22,11 @@ function PermissionsPage() {
                 <SubTitle>Where do I configure Zabbix API permissions ?</SubTitle>
                 <Text>1. Using Zabbix frontend: Administration {"->"} User roles</Text>
                 <Text>2. Open the role that contains the user, find "Access to API" and check the "Enabled" box</Text>
-                <Text>3. You must also define the "API methods" that the user will have authorization, proceed to the next section to see required methods</Text>
+                <img width={500 + 'vw'} height={200 + 'vh'} src={enabledApiImg} alt='Enable API option' style={{ alignSelf: 'center' }} />
+                <Text style={{ marginTop: 1 + 'vh' }}>3. You must also define the "API methods" that the user will have authorization, proceed to the next section to see required methods</Text>
+                <img width={600 + 'vw'} height={150 + 'vh'} src={apiMethodsAllowListImg} alt='Enable API option' style={{ alignSelf: 'center' }} />
                 <br />
-                <Text>* "Access to UI elements" permissions relate to the frontend access, they are not required by Handy Zabbix</Text>
+                <Text style={{ marginTop: 1 + 'vh' }}>* "Access to UI elements" permissions relate to the frontend access, they are not required by Handy Zabbix</Text>
 
                 <SubTitle>Functionality X API method required</SubTitle>
                 <Text>You can check bellow the required API methods for each funcionality to work in Handy Zabbix, you can check out what each of the methods retrieve in <TextLink href='https://www.zabbix.com/documentation/current/en/manual/api/reference' >here</TextLink></Text>
@@ -61,7 +56,7 @@ function PermissionsPage() {
                         </tr>
                     </tbody>
                 </Table>
-                
+
                 <SubTitle>Notes</SubTitle>
                 <Text>* "Access to UI elements" permissions relate to the frontend access, they are not required by Handy Zabbix</Text>
 
