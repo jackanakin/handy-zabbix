@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image'
 import { darkTheme } from 'app/themes/themes/darkTheme';
 
 export const Text = styled(Typography).attrs({
-    variant: "body2", style: { padding: 1 + 'vw' }
+    variant: "body2", style: { padding: 1 + "%" }
 })`
     color: ${darkTheme.text.porcelanColor};
     text-align: left;
@@ -40,7 +40,7 @@ export const ItemTextContainerRight = styled.div`
 `;
 
 export const ItemTitleText = styled(Typography).attrs({
-    variant: "subtitle1", style: { padding: 1 + 'vw' }
+    variant: "subtitle1", style: { padding: 1 + "%" }
 })`
     color: ${darkTheme.text.primaryColor};
     font-weight: bolder;
