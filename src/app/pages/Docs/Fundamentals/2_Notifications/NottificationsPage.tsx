@@ -3,10 +3,14 @@ import React from 'react';
 import FooterContainer from 'app/pages/@containers/Footer/FooterContainer';
 import DocsNavBarContainer from 'app/pages/@containers/DocsNavBar/DocsNavBar';
 
-import addSiteImg from "app/assets/imgs/docs/app_screens/add_site.jpeg";
+import preferencesImg from "app/assets/imgs/docs/app_screens/preferences_battery_optimized.png";
+import preferencesNotOptImg from "app/assets/imgs/docs/app_screens/preferences_battery_notoptimized.png";
+import op5Img from "app/assets/imgs/docs/app_screens/op_5.png";
+import op3Img from "app/assets/imgs/docs/app_screens/op_3.png";
+import op2Img from "app/assets/imgs/docs/app_screens/op_2.png";
 
 import { Content } from './styles';
-import { Title, SubTitle, Text } from '../../DocsStyles';
+import { Title, SubTitle, Text, AssetImage } from '../../DocsStyles';
 import TextLink, { TextMark } from 'app/styled-components/TextLink';
 
 function NottificationsPage() {
@@ -22,23 +26,28 @@ function NottificationsPage() {
                 <Text>You have to manually enable them in the "Preferences" page, as shown bellow, you may choose an <TextLink>*</TextLink>interval or let them disabled.
                     Note that you may configure an interval for notifications when the application is open and when it's running on the background.
                 </Text>
+                <AssetImage src={preferencesImg} />
 
                 <SubTitle>Disable Battery Optimization</SubTitle>
                 <Text>
                     <TextLink>**</TextLink> Note that you are required to "Disable Battery Optimization" for the Handy Zabbix application before you are
-                    able to activate background notifications, otherwise it wouldn't work anyway since Android would terminate the application when it goes to background. The easiest way to do so is opening the "Preferences" page and 
+                    able to activate background notifications, otherwise it wouldn't work anyway since Android would terminate the application when it goes to background. The easiest way to do so is opening the "Preferences" page and
                     clicking on the warning message right bellow "In background, refresh ...", upon clicking it you are redirect to the "App Info" screen, expand the "Advanced" menu and select "Battery"
                 </Text>
-                <Text>The steps below may vary for each device but the option to be modified is the same for all of them, which is disabling the battery optimization for Handy Zabbix</Text>
+                <Text style={{ marginTop: 1 + 'vh' }}>The steps below may vary for each device but the option to be modified is the same for all of them, which is disabling the battery optimization for Handy Zabbix</Text>
 
-                <Text>Now, select "Battery optimization"</Text>
+                <Text style={{ marginTop: 1 + 'vh' }}>Now, select "Battery optimization"</Text>
+                <AssetImage src={op2Img} />
 
-                <Text>In "Battery optimization" screen, you should read a floating button saying "Not optimized", press it and select "All apps"</Text>
+                <Text style={{ marginTop: 1 + 'vh' }}>In "Battery optimization" screen, you should read a floating button saying "Not optimized", press it and select "All apps"</Text>
+                <AssetImage src={op3Img} />
 
-                <Text>Now, find the app "Handy Zabbix" and tap it, switch to "Don't optimize" and press "Done"</Text>
+                <Text style={{ marginTop: 1 + 'vh' }}>Now, find the app "Handy Zabbix" and tap it, switch to "Don't optimize" and press "Done"</Text>
+                <AssetImage src={op5Img} />
 
-                <Text>Go back to the app and open "Preferences" page again, if it's all correct you should be able to select an interval for background notifications</Text>
-                
+                <Text style={{ marginTop: 1 + 'vh' }}>Go back to the app and open "Preferences" page again, if it's all correct you should be able to select an interval for background notifications</Text>
+                <AssetImage src={preferencesNotOptImg} />
+
                 <SubTitle>Extra preferences</SubTitle>
                 <Text><TextLink>Notify unreachable sites:</TextLink> you may also enable this option which notifies you when your phone can't reach a particular site of yours, this means that if you lose connection to your site somehow you won't receive problems notification, <TextMark>by default it's disabled</TextMark></Text>
                 <Text><TextLink>Notify {"if >="} ?:</TextLink> you may select the minimum problem severity that triggers notifications, so you won't be notified of problems with severity bellow the configured, <TextMark>by default it's "AVERAGE"</TextMark></Text>
