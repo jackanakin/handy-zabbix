@@ -10,7 +10,7 @@ import PermissionsPage from 'app/pages/Docs/Fundamentals/3_Permissions/Permissio
 
 function AppRoutes() {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={window.location.pathname || ''}>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
