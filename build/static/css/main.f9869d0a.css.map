@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.f9869d0a.css","mappings":"AAAA,KACE,wBAAyB,CACzB,iBACF","sources":["app.css"],"sourcesContent":["body {\n  background-color: #102027;\n  overflow-x: hidden;\n}\n"],"names":[],"sourceRoot":""}
