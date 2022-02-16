@@ -20,7 +20,7 @@ function PermissionsPage() {
                 <Text>This section of the documentation describes all you need to know about the required Zabbix API permissions</Text>
 
                 <SubTitle>Where do I configure Zabbix API permissions ?</SubTitle>
-                <Text>1. Using Zabbix frontend: Administration {"->"} User roles</Text>
+                <Text>1. Using Zabbix frontend: Go to "Administration {"->"} User roles"</Text>
                 <Text>2. Open the role that contains the user, find "Access to API" and check the "Enabled" box</Text>
                 <img width={500 + 'vw'} height={200 + 'vh'} src={enabledApiImg} alt='Enable API option' style={{ alignSelf: 'center' }} />
                 <Text style={{ marginTop: 1 + 'vh' }}>3. You must also define the "API methods" that the user will have authorization, proceed to the next section to see required methods</Text>
