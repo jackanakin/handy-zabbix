@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import HomePage from 'app/pages/Home/HomePage';
 import PrivacyPolicyPage from 'app/pages/PrivacyPolicy/PrivacyPolicyPage';
@@ -10,7 +10,7 @@ import PermissionsPage from 'app/pages/Docs/Fundamentals/3_Permissions/Permissio
 
 function AppRoutes() {
     return (
-        <BrowserRouter basename={window.location.pathname || ''}>
+        <HashRouter basename="/">
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
@@ -20,7 +20,7 @@ function AppRoutes() {
                 <Route path="/docs/fundamentals/permissions" element={<PermissionsPage />} />
                 <Route path="/docs/guides/addingsites" element={<AddingSitesPage />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
