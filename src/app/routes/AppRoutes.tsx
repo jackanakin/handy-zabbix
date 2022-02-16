@@ -10,7 +10,7 @@ import PermissionsPage from 'app/pages/Docs/Fundamentals/3_Permissions/Permissio
 
 function AppRoutes() {
     return (
-        <BrowserRouter basename="https://jackanakin.github.io/handy-zabbix/">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
