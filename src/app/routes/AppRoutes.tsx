@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import HomePage from 'app/pages/Home/HomePage';
 import PrivacyPolicyPage from 'app/pages/PrivacyPolicy/PrivacyPolicyPage';
@@ -10,15 +10,17 @@ import PermissionsPage from 'app/pages/Docs/Fundamentals/3_Permissions/Permissio
 
 function AppRoutes() {
     return (
-        <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
+        <BrowserRouter basename="https://jackanakin.github.io/handy-zabbix/">
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
 
-            <Route path="/docs/fundamentals/gettingstarted" element={<GettingStartedPage />} />
-            <Route path="/docs/fundamentals/notifications" element={<NottificationsPage />} />
-            <Route path="/docs/fundamentals/permissions" element={<PermissionsPage />} />
-            <Route path="/docs/guides/addingsites" element={<AddingSitesPage />} />
-        </Routes>
+                <Route path="/docs/fundamentals/gettingstarted" element={<GettingStartedPage />} />
+                <Route path="/docs/fundamentals/notifications" element={<NottificationsPage />} />
+                <Route path="/docs/fundamentals/permissions" element={<PermissionsPage />} />
+                <Route path="/docs/guides/addingsites" element={<AddingSitesPage />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
