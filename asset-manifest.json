@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/handy-zabbix/static/css/main.f9869d0a.css",
-    "main.js": "/handy-zabbix/static/js/main.1b8a55fd.js",
+    "main.js": "/handy-zabbix/static/js/main.d3a860a7.js",
     "static/js/787.47afc262.chunk.js": "/handy-zabbix/static/js/787.47afc262.chunk.js",
     "static/media/op_3.png": "/handy-zabbix/static/media/op_3.a9d3b063506a989b48a7.png",
     "static/media/host_detailed.png": "/handy-zabbix/static/media/host_detailed.3b4ec4371158b20cc64a.png",
@@ -30,11 +30,11 @@
     "static/media/graph.png": "/handy-zabbix/static/media/graph.0cf2694775c52c82fb81.png",
     "index.html": "/handy-zabbix/index.html",
     "main.f9869d0a.css.map": "/handy-zabbix/static/css/main.f9869d0a.css.map",
-    "main.1b8a55fd.js.map": "/handy-zabbix/static/js/main.1b8a55fd.js.map",
+    "main.d3a860a7.js.map": "/handy-zabbix/static/js/main.d3a860a7.js.map",
     "787.47afc262.chunk.js.map": "/handy-zabbix/static/js/787.47afc262.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9869d0a.css",
-    "static/js/main.1b8a55fd.js"
+    "static/js/main.d3a860a7.js"
   ]
 }
