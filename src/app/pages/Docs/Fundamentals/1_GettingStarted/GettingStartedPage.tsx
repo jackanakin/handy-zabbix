@@ -3,14 +3,19 @@ import React from 'react';
 import FooterContainer from 'app/pages/@containers/Footer/FooterContainer';
 import DocsNavBarContainer from 'app/pages/@containers/DocsNavBar/DocsNavBar';
 
-import addSiteImg from "app/assets/imgs/docs/app_screens/add_site.jpeg";
-import dashboardImg from "app/assets/imgs/docs/app_screens/dashboard.jpeg";
-import hostsImg from "app/assets/imgs/docs/app_screens/hosts.jpeg";
-import problemsImg from "app/assets/imgs/docs/app_screens/problems.jpeg";
-import setNameImg from "app/assets/imgs/docs/app_screens/set_name.jpeg";
-import hostDetailedImg from "app/assets/imgs/docs/app_screens/host_detailed.jpeg";
-import problemHistoryImg from "app/assets/imgs/docs/app_screens/problem_history.jpeg";
-import graphsImg from "app/assets/imgs/docs/app_screens/graphs.jpeg";
+import problemHistoryImg from "app/assets/imgs/docs/app_screens/problem_history.png";
+import dashboardImg from "app/assets/imgs/docs/app_screens/dashboard.png";
+import hostsImg from "app/assets/imgs/docs/app_screens/hosts.png";
+import problemsImg from "app/assets/imgs/docs/app_screens/problems.png";
+import setNameImg from "app/assets/imgs/docs/app_screens/set_name.png";
+import hostDetailedImg from "app/assets/imgs/docs/app_screens/host_detailed.png";
+import welcomeImg from "app/assets/imgs/docs/app_screens/welcome.png";
+import themeImg from "app/assets/imgs/docs/app_screens/theme.png";
+import noSitesImg from "app/assets/imgs/docs/app_screens/no_sites.png";
+import chooseLoginImg from "app/assets/imgs/docs/app_screens/choose_login.png";
+import setAddressImg from "app/assets/imgs/docs/app_screens/set_address.png";
+import setLoginImg from "app/assets/imgs/docs/app_screens/set_login.png";
+import graphsImg from "app/assets/imgs/docs/app_screens/graphs.png";
 
 import { Content } from './styles';
 import { Title, SubTitle, Text, AssetImage } from '../../DocsStyles';
@@ -33,14 +38,19 @@ function GettingStartedPage() {
                 <Title>Setting up</Title>
                 <Text>After installed, open up the application in your phone</Text>
                 <Text>1. Pickup a language</Text>
-                <Text>2. Select a theme</Text>
-                <Text>3. Press "ADD SITE" </Text>
-                <Text>4. If you have an username and password, use "CREDENTIALS", if you have a token choose "TOKEN"</Text>
-                <AssetImage src={addSiteImg} />
+                <AssetImage src={welcomeImg} />
+                <Text style={{ marginTop: 1 + 'vh' }}>2. Select a theme</Text>
+                <AssetImage src={themeImg} />
+                <Text style={{ marginTop: 1 + 'vh' }}>3. Press "ADD SITE" </Text>
+                <AssetImage src={noSitesImg} />
+                <Text style={{ marginTop: 1 + 'vh' }}>4. If you have an username and password, use "CREDENTIALS", if you have a token choose "TOKEN"</Text>
+                <AssetImage src={chooseLoginImg} />
                 <Text style={{ marginTop: 1 + 'vh' }}>5. Provide a name for the new site, may be anything and is only used to describe the site inside de application</Text>
                 <AssetImage src={setNameImg} />
                 <Text style={{ marginTop: 1 + 'vh' }}>6. Provide your Zabbix address, if you are using HTTPS the CERTIFICATE MUST BE VALID, self-signed certificates WILL NOT WORK. Press "TEST SITE" to test the communication with the site, if successful should return Zabbix version</Text>
-                <Text>7. Finally, if you picked up "TOKEN" in step 4, provide your API token. Otherwise provide an username/password</Text>
+                <AssetImage src={setAddressImg} />
+                <Text style={{ marginTop: 1 + 'vh' }}>7. Finally, if you picked up "TOKEN" in step 4, provide your API token. Otherwise provide an username/password</Text>
+                <AssetImage src={setLoginImg} />
 
                 <Title>Tour</Title>
                 <Text>Once you added a site, the application automatically starts fetching the required information every minute and notifies you if a new problem is created</Text>
@@ -54,12 +64,14 @@ function GettingStartedPage() {
                 <Text style={{ marginTop: 1 + 'vh' }}>Wheter you are at "Problems" or "Hosts" page, if you press any of the containers you will be presented with the host informations on a new page, from there you can search for the host "Problem History" and view the host "Graphs"</Text>
                 <AssetImage src={hostDetailedImg} />
                 <Text style={{ marginTop: 1 + 'vh' }}>On "Problem History" page, you can search for resolved problems for the specific host between a custom date range</Text>
+                <AssetImage src={problemHistoryImg} />
                 <Text style={{ marginTop: 1 + 'vh' }}>On "Graphs" page, you can view host graphs, for now with limited options</Text>
+                <AssetImage src={graphsImg} />
 
                 <Title>Notes</Title>
-                <Text>* If you have question about token/credential, check out <TextLink>here</TextLink></Text>
-                <Text>** For successful background notifications, an additional step is required, check out <TextLink>here</TextLink></Text>
-                <Text>*** You can customize some settings such mininum severity for notifications, background interval and more in "[icon] PREFERENCES", check out <TextLink>here</TextLink></Text>
+                <Text style={{ display: "none" }}>* If you have question about token/credential, check out <TextLink>here</TextLink></Text>
+                <Text>** For successful background notifications, battery optimization for the app must be disabled</Text>
+                <Text>*** You can customize some settings such mininum severity for notifications, background interval and more in "Preferences" page</Text>
             </Content>
             <FooterContainer />
         </>

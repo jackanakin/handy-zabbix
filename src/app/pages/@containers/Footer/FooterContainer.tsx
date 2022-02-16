@@ -21,6 +21,8 @@ function FooterContainer() {
                     </Column>
                     <Column>
                         <Heading>DOCS</Heading>
+                        <FooterLink href="/docs/fundamentals/gettingstarted">Getting started</FooterLink>
+                        <FooterLink href="/docs/fundamentals/permissions">Zabbix API permissions</FooterLink>
                     </Column>
                     <Column>
                         <Heading>DOWNLOAD</Heading>
