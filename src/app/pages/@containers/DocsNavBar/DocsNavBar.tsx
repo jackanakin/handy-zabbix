@@ -23,9 +23,9 @@ function DocsNavBarContainer() {
 
                         {/** FUNDAMENTALS */}
                         <NavDropdown title="Fundamentals" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/docs/fundamentals/gettingstarted">Getting started</NavDropdown.Item>
-                            <NavDropdown.Item href="/docs/fundamentals/notifications">Notifications</NavDropdown.Item>
-                            <NavDropdown.Item href="/docs/fundamentals/permissions">Zabbix Permissions</NavDropdown.Item>
+                            <NavDropdown.Item href="/docs_fundamentals_gettingstarted">Getting started</NavDropdown.Item>
+                            <NavDropdown.Item href="/docs_fundamentals_notifications">Notifications</NavDropdown.Item>
+                            <NavDropdown.Item href="/docs_fundamentals_permissions">Zabbix Permissions</NavDropdown.Item>
                         </NavDropdown>
 
                         {/** GUIDES */}

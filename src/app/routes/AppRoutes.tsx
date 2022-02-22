@@ -14,10 +14,10 @@ function AppRoutes() {
             <Route path="/" element={<HomePage />} />
             <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
 
-            <Route path="/docs/fundamentals/gettingstarted" element={<GettingStartedPage />} />
-            <Route path="/docs/fundamentals/notifications" element={<NottificationsPage />} />
-            <Route path="/docs/fundamentals/permissions" element={<PermissionsPage />} />
-            <Route path="/docs/guides/addingsites" element={<AddingSitesPage />} />
+            <Route path="/docs_fundamentals_gettingstarted" element={<GettingStartedPage />} />
+            <Route path="/docs_fundamentals_notifications" element={<NottificationsPage />} />
+            <Route path="/docs_fundamentals_permissions" element={<PermissionsPage />} />
+            <Route path="/docs_guides_addingsites" element={<AddingSitesPage />} />
         </Routes>
     );
 }
