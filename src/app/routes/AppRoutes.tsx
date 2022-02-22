@@ -10,17 +10,15 @@ import PermissionsPage from 'app/pages/Docs/Fundamentals/3_Permissions/Permissio
 
 function AppRoutes() {
     return (
-        <HashRouter basename="/">
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
 
-                <Route path="/docs/fundamentals/gettingstarted" element={<GettingStartedPage />} />
-                <Route path="/docs/fundamentals/notifications" element={<NottificationsPage />} />
-                <Route path="/docs/fundamentals/permissions" element={<PermissionsPage />} />
-                <Route path="/docs/guides/addingsites" element={<AddingSitesPage />} />
-            </Routes>
-        </HashRouter>
+            <Route path="/docs/fundamentals/gettingstarted" element={<GettingStartedPage />} />
+            <Route path="/docs/fundamentals/notifications" element={<NottificationsPage />} />
+            <Route path="/docs/fundamentals/permissions" element={<PermissionsPage />} />
+            <Route path="/docs/guides/addingsites" element={<AddingSitesPage />} />
+        </Routes>
     );
 }
 
