@@ -55,11 +55,6 @@ export const ItemWrapper = styled.div`
     margin-top: 1vh;
 `;
 
-export const CarouselImage = styled.img`
-    width: 100%;
-    height: 33vh;
-`;
-
 export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;

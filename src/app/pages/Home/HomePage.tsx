@@ -1,9 +1,7 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 
 import {
-    ContentWrapper, CarouselImage,
-    ItemWrapper,
+    ContentWrapper, ItemWrapper,
     ItemTextContainerRight, ItemTextContainerLeft,
     Icon, Text, ItemTitleText
 } from './styles';
@@ -27,7 +25,7 @@ function HomePage() {
                 <Text>This page is under construction</Text>
             </ItemWrapper>
 
-            <ContentWrapper style={{marginTop: 150 + "px"}}>
+            <ContentWrapper style={{ marginTop: 150 + "px" }}>
                 <ItemWrapper>
                     <Icon src={tree} roundedCircle />
                     <ItemTextContainerLeft>
