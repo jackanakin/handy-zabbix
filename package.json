@@ -1,6 +1,6 @@
 {
   "name": "handyzabbix",
-  "homepage": "https://jackanakin.github.io/handy-zabbix/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

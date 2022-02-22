@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import HomePage from 'app/pages/Home/HomePage';
 import PrivacyPolicyPage from 'app/pages/PrivacyPolicy/PrivacyPolicyPage';
