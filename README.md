@@ -40,3 +40,49 @@ You can find the full explanation [here](https://hz.kuhn.dev.br/docs_fundamental
 - [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
 - [Moment](https://momentjs.com/) for dates and times
+
+<h1 align="center">Screenshots</h1>
+<p>Landing screens</p>
+<p float="left">
+<img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/welcome.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/welcome.png" width="200" height="400" />
+<img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/theme.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/theme.png" width="200" height="400" />
+<img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/no_sites.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/no_sites.png" width="200" height="400" />
+</p>
+
+<p>Site managment screens</p>
+<p float="left">
+<img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/choose_login.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/choose_login.png" width="200" height="400" />
+  <img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/set_name.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/set_name.png" width="200" height="400" />
+    <img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/set_address.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/set_address.png" width="200" height="400" />
+      <img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/set_login.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/set_login.png" width="200" height="400" />
+</p>
+
+<p>Preferences screen</p>
+<p float="left">
+<img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/preferences_battery_notoptimized.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/preferences_battery_notoptimized.png" width="200" height="400" />
+</p>
+
+<p>Main screen tabs</p>
+<p float="left">
+<img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/dashboard.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/dashboard.png" width="200" height="400" />
+  <img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/problems.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/problems.png" width="200" height="400" />
+    <img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/hosts.png" 
+data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/hosts.png" width="200" height="400" />
+</p>
+
+<p>Host detailed screen</p>
+<p float="left">
+<img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/host_detailed.png" data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/host_detailed.png" width="200" height="400" />
+  <img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/problem_history.png" data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/problem_history.png" width="200" height="400" />
+    <img src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/graphs.png" data-canonical-src="https://github.com/jackanakin/handy-zabbix/blob/main/src/app/assets/imgs/docs/app_screens/graphs.png" width="200" height="400" />
+</p>
