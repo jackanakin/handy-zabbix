@@ -17,8 +17,8 @@ Check out the [app documentation](https://hz.kuhn.dev.br/docs_fundamentals_getti
 - [x] View hosts basic details
 - [x] Search for hosts current problems and history
 - [x] View hosts graphs
-- [ ] View hosts latest data
-- [ ] View hosts inventory
+- [x] View hosts latest data
+- [x] View hosts inventory
 
 <h1 align="center">Known issues</h1>
 <p>1. Data fetch is synchronous, so if one site takes too long all process is impacted</p>
